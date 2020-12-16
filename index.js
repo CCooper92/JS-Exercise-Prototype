@@ -82,7 +82,9 @@ function Airplane(name) {
     this.odometer = 0;
   }
   Car.prototype.fill = function(gallons){
+      this.tank += gallons;
       
+
   }
   Car.prototype.Odometer = function(){
     
@@ -90,7 +92,8 @@ function Airplane(name) {
   
   
   
-  
+
+
   /*
     TASK 3
       - Write a Baby constructor subclassing Person.
@@ -114,10 +117,10 @@ function Airplane(name) {
   /* 
     TASK 4
     In your own words explain the four principles for the "this" keyword below:
-    1. 
-    2. 
-    3. 
-    4. 
+    1. Global Binding- binding to the window/console object
+    2. Implicit Binding- whenever a function is called by . notation, object to the left of . gets 'this'
+    3. New Binding- whenever constructor function is used the 'this' refers to the specific instance of the object that is created  & returned by the constructor function.
+    4. Explicit Binding: whenever the call or apply method is used the 'this' is explicitly defined.
   */
   
   
